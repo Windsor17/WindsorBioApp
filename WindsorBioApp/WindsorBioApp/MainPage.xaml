@@ -4,19 +4,57 @@
              xmlns:local="clr-namespace:WindsorBioApp"
              x:Class="WindsorBioApp.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="About Me!" 
-           HorizontalOptions="Fill"
-           FontAttributes="Bold"
-           HorizontalTextAlignment="Center"
-           VerticalTextAlignment="Center"
-           TextColor="DarkOrange"
-           BackgroundColor="Black"
-           HeightRequest="50"
-           FontSize="30"
+    <StackLayout BackgroundColor="DarkGray">
+       
+            <Label Text="Windsor" 
+               HorizontalOptions="Fill"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               TextColor="DarkOrange"
+               BackgroundColor="Black"
+               HeightRequest="75"
+               FontSize="50"
            />
-        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Text="About Me"
+                   HorizontalOptions="Fill"
+                   BackgroundColor="Black"
+                   HorizontalTextAlignment="End"
+                   TextColor="DarkOrange"
+                   Grid.Column="1"
+                   Grid.Row="0"
+                   FontSize="30"
+                   
+           />
+            <Label Text="About Me"
+                   HorizontalOptions="Fill"
+                   BackgroundColor="Black"
+                   HorizontalTextAlignment="End"
+                   TextColor="DarkOrange"
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   FontSize="30"
+           />
+            <Label Text="About Me"
+                   HorizontalOptions="Fill"
+                   BackgroundColor="Black"
+                   HorizontalTextAlignment="End"
+                   TextColor="DarkOrange"
+                   Grid.Column="1"
+                   Grid.Row="2"
+                   FontSize="30"
+           />
+        </Grid>
     </StackLayout>
 
 </ContentPage>
