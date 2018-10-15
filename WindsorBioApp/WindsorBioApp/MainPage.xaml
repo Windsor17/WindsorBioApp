@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:WindsorBioApp"
              x:Class="WindsorBioApp.MainPage">
 
-    <StackLayout BackgroundColor="DarkGray">
+    <StackLayout BackgroundColor="DarkGray" Spacing="2">
        
             <Label Text="Windsor" 
                HorizontalOptions="Fill"
@@ -13,47 +13,73 @@
                VerticalTextAlignment="Center"
                TextColor="DarkOrange"
                BackgroundColor="Black"
-               HeightRequest="75"
+               HeightRequest="150"
                FontSize="50"
            />
-        <Grid>
+        <Grid RowSpacing="2" ColumnSpacing="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="3*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+
             <Label Text="About Me"
                    HorizontalOptions="Fill"
+                   VerticalOptions="FillAndExpand"
                    BackgroundColor="Black"
                    HorizontalTextAlignment="End"
                    TextColor="DarkOrange"
                    Grid.Column="1"
                    Grid.Row="0"
-                   FontSize="30"
-                   
+                   FontSize="35"
+                   HeightRequest="200"
+                   VerticalTextAlignment="Center"
            />
-            <Label Text="About Me"
+            <Label Text="Skills"
                    HorizontalOptions="Fill"
+                   VerticalOptions="FillAndExpand"
                    BackgroundColor="Black"
                    HorizontalTextAlignment="End"
                    TextColor="DarkOrange"
                    Grid.Column="1"
                    Grid.Row="1"
-                   FontSize="30"
+                   FontSize="35"
+                   HeightRequest="200"
+                   VerticalTextAlignment="Center"
            />
-            <Label Text="About Me"
+            <Label Text="Contact me"
                    HorizontalOptions="Fill"
+                   VerticalOptions="FillAndExpand"
                    BackgroundColor="Black"
                    HorizontalTextAlignment="End"
                    TextColor="DarkOrange"
                    Grid.Column="1"
                    Grid.Row="2"
-                   FontSize="30"
+                   FontSize="35"
+                   HeightRequest="200"
+                   VerticalTextAlignment="Center"
            />
+            <Button
+                BackgroundColor="DarkOrange"
+                Grid.Column="0"
+                Grid.Row="0"
+                x:Name="NavigationButton"
+                Clicked="NavigationButton_Clicked"
+            />
+            <Button
+                BackgroundColor="DarkOrange"
+                Grid.Column="0"
+                Grid.Row="1"
+            />
+            <Button
+                BackgroundColor="DarkOrange"
+                Grid.Column="0"
+                Grid.Row="2"
+            />
         </Grid>
     </StackLayout>
 
