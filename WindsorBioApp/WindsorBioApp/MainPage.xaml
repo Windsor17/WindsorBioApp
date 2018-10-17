@@ -27,6 +27,17 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
+            <BoxView
+                HorizontalOptions="Fill"
+                VerticalOptions="FillAndExpand"
+                BackgroundColor="Green"
+                Grid.Column="1"
+                Grid.Row="0"
+                HeightRequest="200"
+                x:Name="AboutMeLabel"
+                
+            />
+
             <Label Text="About Me"
                    HorizontalOptions="Fill"
                    VerticalOptions="FillAndExpand"
@@ -70,16 +81,40 @@
                 x:Name="NavigationButton"
                 Clicked="NavigationButton_Clicked"
             />
+
+            <Image x:Name="AboutMeIcon"
+                Source="C:\Users\Andrew\Pictures\AboutMeApp\AboutMeIcon.png"
+                Grid.Column="0"
+                Grid.Row="0">
+                <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                   </Image.GestureRecognizers>
+            </Image>
+
             <Button
                 BackgroundColor="DarkOrange"
                 Grid.Column="0"
                 Grid.Row="1"
             />
+
+            <Image x:Name="SkillsIcon"
+                Source="C:\Users\Andrew\Pictures\AboutMeApp\SkillsIcon.png"
+                Grid.Column="0"
+                Grid.Row="1">
+            </Image>
+
             <Button
                 BackgroundColor="DarkOrange"
                 Grid.Column="0"
                 Grid.Row="2"
             />
+
+            <Image x:Name="ConatctMeIcon"
+                Source="C:\Users\Andrew\Pictures\AboutMeApp\ContactMeIcon.png"
+                Grid.Column="0"
+                Grid.Row="2">
+            </Image>
+
         </Grid>
     </StackLayout>
 
