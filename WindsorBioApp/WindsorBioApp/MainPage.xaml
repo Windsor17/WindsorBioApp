@@ -27,18 +27,8 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <BoxView
-                HorizontalOptions="Fill"
-                VerticalOptions="FillAndExpand"
-                BackgroundColor="Green"
-                Grid.Column="1"
-                Grid.Row="0"
-                HeightRequest="200"
-                x:Name="AboutMeLabel"
-                
-            />
-
-            <Label Text="About Me"
+            <Label x:Name="AboutMeLabel"
+                   Text="About Me"
                    HorizontalOptions="Fill"
                    VerticalOptions="FillAndExpand"
                    BackgroundColor="Black"
@@ -48,8 +38,12 @@
                    Grid.Row="0"
                    FontSize="35"
                    HeightRequest="200"
-                   VerticalTextAlignment="Center"
-           />
+                   VerticalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="AboutMeLabel_Tapped" NumberOfTapsRequired="1"/>
+                </Label.GestureRecognizers>
+           </Label>
+
             <Label Text="Skills"
                    HorizontalOptions="Fill"
                    VerticalOptions="FillAndExpand"
@@ -60,8 +54,12 @@
                    Grid.Row="1"
                    FontSize="35"
                    HeightRequest="200"
-                   VerticalTextAlignment="Center"
-           />
+                   VerticalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="SkillsLabel_Tapped" NumberOfTapsRequired="1"/>
+                </Label.GestureRecognizers>
+            </Label>
+
             <Label Text="Contact me"
                    HorizontalOptions="Fill"
                    VerticalOptions="FillAndExpand"
@@ -72,47 +70,55 @@
                    Grid.Row="2"
                    FontSize="35"
                    HeightRequest="200"
-                   VerticalTextAlignment="Center"
-           />
-            <Button
+                   VerticalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ContactMeLabel_Tapped" NumberOfTapsRequired="1"/>
+                </Label.GestureRecognizers>
+            </Label>
+       
+            <BoxView
                 BackgroundColor="DarkOrange"
                 Grid.Column="0"
                 Grid.Row="0"
-                x:Name="NavigationButton"
-                Clicked="NavigationButton_Clicked"
             />
 
             <Image x:Name="AboutMeIcon"
-                Source="C:\Users\Andrew\Pictures\AboutMeApp\AboutMeIcon.png"
+                Source="aboutmeicon.png"
                 Grid.Column="0"
                 Grid.Row="0">
                 <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
-                   </Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="AboutMeIcon_Tapped" NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
             </Image>
 
-            <Button
+            <BoxView
                 BackgroundColor="DarkOrange"
                 Grid.Column="0"
                 Grid.Row="1"
             />
 
             <Image x:Name="SkillsIcon"
-                Source="C:\Users\Andrew\Pictures\AboutMeApp\SkillsIcon.png"
+                Source="skillicon.png"
                 Grid.Column="0"
                 Grid.Row="1">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="SkillsIcon_Tapped" NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
             </Image>
 
-            <Button
+            <BoxView
                 BackgroundColor="DarkOrange"
                 Grid.Column="0"
                 Grid.Row="2"
             />
 
-            <Image x:Name="ConatctMeIcon"
-                Source="C:\Users\Andrew\Pictures\AboutMeApp\ContactMeIcon.png"
+            <Image x:Name="ContactMeIcon"
+                Source="contactmeicon.png"
                 Grid.Column="0"
                 Grid.Row="2">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ContactMeIcon_Tapped" NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
             </Image>
 
         </Grid>

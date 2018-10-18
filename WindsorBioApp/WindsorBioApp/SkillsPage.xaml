@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WindsorBioApp.AboutMePage">
+             x:Class="WindsorBioApp.SkillsPage">
     <ContentPage.Content>
         <StackLayout BackgroundColor="DarkGray" Spacing="2">
             <Label Text="Windsor" 
@@ -13,7 +13,8 @@
                BackgroundColor="Black"
                HeightRequest="150"
                FontSize="50"
-           />
+            />
+
             <Grid RowSpacing="2" ColumnSpacing="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -28,7 +29,7 @@
                          Grid.Column="0"
                          Grid.Row="0"
                 />
-                <Label Text="About Me"
+                <Label Text="Skills"
                    HorizontalOptions="Fill"
                    VerticalOptions="FillAndExpand"
                    BackgroundColor="Black"
@@ -39,9 +40,9 @@
                    FontSize="35"
                    HeightRequest="200"
                    VerticalTextAlignment="Center">
-                 </Label>
+                </Label>
 
-                <Image Source="aboutmeicon.png"
+                <Image Source="skillicon.png"
                 Grid.Column="0"
                 Grid.Row="0">
                 </Image>
@@ -52,15 +53,21 @@
                          Grid.ColumnSpan="2"
                 />
 
-                <Label Text="I'm David Windsor, a Computer Information Systems student at Pitt State. In my spare time, I love playing video games and board games with friends. I also really enjoy messing with and learning about new technology. I've built my own PC and like trying new stuff with it or around it to see how it works."
+                <Label
                        Grid.Column="0"
                        Grid.Row="1"
                        Grid.ColumnSpan="2"
                        TextColor="DarkOrange"
                        BackgroundColor="Black"
-                       FontSize="25"
-                       Margin="15"
-                />
+                       FontSize="35"
+                       Margin="15">
+                    <Label.Text>
+                        •C++
+•Microsoft Office
+•Technical Help Desk
+•Computer Hardware
+                    </Label.Text>
+                </Label>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

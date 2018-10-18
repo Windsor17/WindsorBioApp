@@ -14,14 +14,34 @@ namespace WindsorBioApp
 			InitializeComponent();
 		}
 
-        private void NavigationButton_Clicked(object sender, EventArgs e)
+        private void AboutMeIcon_Tapped(object sender, EventArgs e)
         {
             Navigation.PushAsync(new AboutMePage());
         }
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private void AboutMeLabel_Tapped(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new AboutMePage());
+        }
 
+        private void SkillsLabel_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SkillsPage());
+        }
+
+        private void SkillsIcon_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SkillsPage());
+        }
+
+        private void ContactMeLabel_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ContactMePage());
+        }
+
+        private void ContactMeIcon_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ContactMePage());
         }
     }
 }
