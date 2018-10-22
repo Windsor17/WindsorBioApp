@@ -99,10 +99,13 @@
     <AndroidResource Include="Resources\drawable\aboutmeicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\skillicon.png" />
+    <AndroidResource Include="Resources\drawable\contactmeicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\contactmeicon.png" />
+    <AndroidResource Include="Resources\drawable\skillsicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ProfilePic.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

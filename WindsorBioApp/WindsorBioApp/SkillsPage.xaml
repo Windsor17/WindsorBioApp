@@ -42,7 +42,7 @@
                    VerticalTextAlignment="Center">
                 </Label>
 
-                <Image Source="skillicon.png"
+                <Image Source="skillsicon.png"
                 Grid.Column="0"
                 Grid.Row="0">
                 </Image>

@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WindsorBioApp.AboutMePage">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="DarkGray" Spacing="2">
-            <Label Text="Windsor" 
+        <ScrollView>
+            <StackLayout BackgroundColor="DarkGray" Spacing="2">
+                <Label Text="Windsor" 
                HorizontalOptions="Fill"
                FontAttributes="Bold"
                HorizontalTextAlignment="Center"
@@ -14,23 +15,22 @@
                HeightRequest="150"
                FontSize="50"
            />
-            <Grid RowSpacing="2" ColumnSpacing="2">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="3*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="4*"/>
-                </Grid.RowDefinitions>
+                <Grid RowSpacing="2" ColumnSpacing="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="2*"/>
+                    </Grid.RowDefinitions>
 
-                <BoxView BackgroundColor="DarkOrange"
+                    <BoxView BackgroundColor="DarkOrange"
                          Grid.Column="0"
                          Grid.Row="0"
                 />
-                <Label Text="About Me"
+                    <Label Text="About Me"
                    HorizontalOptions="Fill"
-                   VerticalOptions="FillAndExpand"
                    BackgroundColor="Black"
                    HorizontalTextAlignment="End"
                    TextColor="DarkOrange"
@@ -39,20 +39,20 @@
                    FontSize="35"
                    HeightRequest="200"
                    VerticalTextAlignment="Center">
-                 </Label>
+                    </Label>
 
-                <Image Source="aboutmeicon.png"
+                    <Image Source="ProfilePic.jpg"
                 Grid.Column="0"
                 Grid.Row="0">
-                </Image>
+                    </Image>
 
-                <BoxView BackgroundColor="Black"
+                    <BoxView BackgroundColor="Black"
                          Grid.Row="1"
                          Grid.Column="0"
                          Grid.ColumnSpan="2"
                 />
 
-                <Label Text="I'm David Windsor, a Computer Information Systems student at Pitt State. In my spare time, I love playing video games and board games with friends. I also really enjoy messing with and learning about new technology. I've built my own PC and like trying new stuff with it or around it to see how it works."
+                    <Label Text="I'm David Windsor, a Computer Information Systems student at Pitt State. In my spare time, I love playing video games and board games with friends. I also really enjoy messing with and learning about new technology. I've built my own PC and like trying new stuff with it or around it to see how it works."
                        Grid.Column="0"
                        Grid.Row="1"
                        Grid.ColumnSpan="2"
@@ -61,7 +61,8 @@
                        FontSize="25"
                        Margin="15"
                 />
-            </Grid>
-        </StackLayout>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
