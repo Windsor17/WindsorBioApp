@@ -12,7 +12,7 @@
                VerticalTextAlignment="Center"
                TextColor="DarkOrange"
                BackgroundColor="Black"
-               HeightRequest="150"
+               HeightRequest="100"
                FontSize="50"
            />
                 <Grid RowSpacing="2" ColumnSpacing="2">
@@ -36,14 +36,15 @@
                    TextColor="DarkOrange"
                    Grid.Column="1"
                    Grid.Row="0"
-                   FontSize="35"
-                   HeightRequest="200"
+                   FontSize="25"
+                   HeightRequest="100"
                    VerticalTextAlignment="Center">
                     </Label>
 
-                    <Image Source="ProfilePic.jpg"
-                Grid.Column="0"
-                Grid.Row="0">
+                    <Image Source="aboutmepic.jpg"
+                           Grid.Column="0"
+                           Grid.Row="0"
+                           HeightRequest="1">
                     </Image>
 
                     <BoxView BackgroundColor="Black"
@@ -58,7 +59,7 @@
                        Grid.ColumnSpan="2"
                        TextColor="DarkOrange"
                        BackgroundColor="Black"
-                       FontSize="25"
+                       FontSize="20"
                        Margin="15"
                 />
                 </Grid>

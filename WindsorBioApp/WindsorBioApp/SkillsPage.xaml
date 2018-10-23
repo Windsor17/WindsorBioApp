@@ -3,72 +3,73 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WindsorBioApp.SkillsPage">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="DarkGray" Spacing="2">
-            <Label Text="Windsor" 
+        <ScrollView>
+            <StackLayout BackgroundColor="DarkGray" Spacing="2">
+                <Label Text="Windsor" 
                HorizontalOptions="Fill"
                FontAttributes="Bold"
                HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center"
                TextColor="DarkOrange"
                BackgroundColor="Black"
-               HeightRequest="150"
+               HeightRequest="100"
                FontSize="50"
             />
 
-            <Grid RowSpacing="2" ColumnSpacing="2">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="3*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="4*"/>
-                </Grid.RowDefinitions>
+                <Grid RowSpacing="2" ColumnSpacing="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
 
-                <BoxView BackgroundColor="DarkOrange"
+                    <BoxView BackgroundColor="DarkOrange"
                          Grid.Column="0"
                          Grid.Row="0"
                 />
-                <Label Text="Skills"
+                    <Label Text="Skills"
                    HorizontalOptions="Fill"
-                   VerticalOptions="FillAndExpand"
                    BackgroundColor="Black"
                    HorizontalTextAlignment="End"
                    TextColor="DarkOrange"
                    Grid.Column="1"
                    Grid.Row="0"
-                   FontSize="35"
-                   HeightRequest="200"
+                   FontSize="25"
                    VerticalTextAlignment="Center">
-                </Label>
+                    </Label>
 
-                <Image Source="skillsicon.png"
+                    <Image Source="skillsicon.png"
                 Grid.Column="0"
-                Grid.Row="0">
-                </Image>
+                Grid.Row="0"
+                           HeightRequest="100">
+                    </Image>
 
-                <BoxView BackgroundColor="Black"
+                    <BoxView BackgroundColor="Black"
                          Grid.Row="1"
                          Grid.Column="0"
                          Grid.ColumnSpan="2"
                 />
 
-                <Label
+                    <Label
                        Grid.Column="0"
                        Grid.Row="1"
                        Grid.ColumnSpan="2"
                        TextColor="DarkOrange"
                        BackgroundColor="Black"
-                       FontSize="35"
+                       FontSize="20"
                        Margin="15">
-                    <Label.Text>
-                        •C++
+                        <Label.Text>
+                            •C++
 •Microsoft Office
 •Technical Help Desk
 •Computer Hardware
-                    </Label.Text>
-                </Label>
-            </Grid>
-        </StackLayout>
+                        </Label.Text>
+                    </Label>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

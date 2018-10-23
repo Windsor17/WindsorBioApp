@@ -36,7 +36,7 @@
                    TextColor="DarkOrange"
                    Grid.Column="1"
                    Grid.Row="0"
-                   FontSize="35"
+                   FontSize="25"
                    HeightRequest="200"
                    VerticalTextAlignment="Center">
                 <Label.GestureRecognizers>
@@ -52,7 +52,7 @@
                    TextColor="DarkOrange"
                    Grid.Column="1"
                    Grid.Row="1"
-                   FontSize="35"
+                   FontSize="25"
                    HeightRequest="200"
                    VerticalTextAlignment="Center">
                 <Label.GestureRecognizers>
@@ -68,7 +68,7 @@
                    TextColor="DarkOrange"
                    Grid.Column="1"
                    Grid.Row="2"
-                   FontSize="35"
+                   FontSize="25"
                    HeightRequest="200"
                    VerticalTextAlignment="Center">
                 <Label.GestureRecognizers>
