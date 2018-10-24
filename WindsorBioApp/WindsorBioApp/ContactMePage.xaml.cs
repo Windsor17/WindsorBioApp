@@ -16,5 +16,26 @@ namespace WindsorBioApp
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void ContactMeButton_Clicked(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(NameEntry.Text))
+            {
+                DisplayAlert("Error", "Enter something", "Oh, ok");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(EmailEntry.Text))
+            {
+                DisplayAlert("Error", "Enter something", "Oh, ok");
+                return;
+            }
+            if (string.IsNullOrEmpty(MessageEntry.Text))
+            {
+                DisplayAlert("Error", "Enter something", "Oh, ok");
+                return;
+            }
+            DisplayAlert("Alert", "You're message was sent.", "Woohoo");
+        }
+    }
 }

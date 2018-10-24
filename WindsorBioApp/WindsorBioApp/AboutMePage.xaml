@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WindsorBioApp.AboutMePage">
+             x:Class="WindsorBioApp.AboutMePage"
+             BackgroundColor="Black"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="True">
     <ContentPage.Content>
-        <ScrollView>
+        <ScrollView BackgroundColor="Black">
             <StackLayout BackgroundColor="DarkGray" Spacing="2">
                 <Label Text="Windsor" 
                HorizontalOptions="Fill"
@@ -61,6 +64,7 @@
                        BackgroundColor="Black"
                        FontSize="20"
                        Margin="15"
+                       VerticalOptions="FillAndExpand"
                 />
                 </Grid>
             </StackLayout>
