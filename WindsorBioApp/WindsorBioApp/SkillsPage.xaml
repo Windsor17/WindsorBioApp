@@ -46,11 +46,37 @@
                     </Image>
                 </Grid>
 
-                <Entry x:Name="SkillEntry" TextColor="Black"/>
+                <ListView x:Name="SkillList"
+                          HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="30"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    
+                                    <Image WidthRequest="50"
+                                           HeightRequest="50"
+                                           Source="{Binding Icon}"
+                                           Grid.Row="0"
+                                           Grid.Column="0"/>
+                                    
+                                    <Label Text="{Binding Description}"
+                                           FontSize="24"
+                                           TextColor="DarkOrange"/>
 
-                <Button Text="Submit" x:Name="SkillButton" Clicked="SkillButton_Clicked" />
 
-                <ListView x:Name="SkillList"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
                 
             </StackLayout>
         </ScrollView>
