@@ -21,7 +21,7 @@ namespace WindsorBioApp
             this.Skills = new ObservableCollection<Skill>();
             this.Skills.Add(new Skill {Name = "Stuff", Description = "I like stuff"});
             this.Skills.Add(new Skill {Name = "Things", Description = "I also like things"});
-            this.Skills.Add(new Skill {Name = "Rocket League", Description = "I got diamond clout"});
+            this.Skills.Add(new Skill {Name = "Rocket League", Description = "I got diamond skills"});
             SkillList.ItemsSource = this.Skills;
 		}
 
@@ -30,5 +30,6 @@ namespace WindsorBioApp
             public string Icon { get; set; }
             public string Description { get; set; }
             public string Name { get; set; }
+        }
     }
 }

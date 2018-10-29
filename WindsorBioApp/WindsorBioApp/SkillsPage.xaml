@@ -66,10 +66,18 @@
                                            Source="{Binding Icon}"
                                            Grid.Row="0"
                                            Grid.Column="0"/>
-                                    
-                                    <Label Text="{Binding Description}"
-                                           FontSize="24"
+
+                                    <Label Text="{Binding Name}"
+                                           Font="24"
+                                           Grid.Row="0"
+                                           Grid.Column="1"
                                            TextColor="DarkOrange"/>
+
+                                    <Label Text="{Binding Description}"
+                                           FontSize="16"
+                                           TextColor="Black"
+                                           Grid.Column="1"
+                                           Grid.Row="1"/>
 
 
                                 </Grid>
