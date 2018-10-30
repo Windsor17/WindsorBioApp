@@ -19,9 +19,9 @@ namespace WindsorBioApp
 			InitializeComponent ();
 
             this.Skills = new ObservableCollection<Skill>();
-            this.Skills.Add(new Skill {Name = "Stuff", Description = "I like stuff"});
-            this.Skills.Add(new Skill {Name = "Things", Description = "I also like things"});
-            this.Skills.Add(new Skill {Name = "Rocket League", Description = "I got diamond skills"});
+            this.Skills.Add(new Skill {Name = "C++", Description = "I have taken a class", Icon = "codingicon.png"});
+            this.Skills.Add(new Skill {Name = "Technical Help Desk", Description = "I am a Gorilla Geek", Icon = "helpdeskicon.png"});
+            this.Skills.Add(new Skill {Name = "Rocket League", Description = "I got diamond skills", Icon = "rocketleagueicon.png"});
             SkillList.ItemsSource = this.Skills;
 		}
 
